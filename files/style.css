@@ -1,0 +1,116 @@
+﻿/* Basics */
+@font-face { font-family: gidolinyaregular; src: url(gidolinyaregular.otf); }
+
+@media print {
+	html, body { overflow: visible !important; }
+	#main_menu, #footer_bar, .top_knap, #toc, h2:first-child { display: none !important; }
+	#content { overflow: visible !important; position: static !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+	#content > .standard_width { width: 90% !important; page-break-after: always; }
+}
+
+
+html, body { width: 100%; height: 100%; top: 0; background: white; overflow: hidden; }
+html, body, p, div, input, table, tr, td, img, b, span, form, a, h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; padding: 0; font-family: gidolinyaregular; font-weight: lighter; color: #555; }
+a, textarea:focus, input:focus { outline: none; border: none; text-decoration: none; }
+::selection { color: lightgray; }
+.center { margin: auto 0; text-align: center; display: block; }
+
+/* Menu */
+#main_menu { position: fixed; z-index: 1000; display: block; background: white; padding: 0; top: 0; width: 100%; overflow: hidden; box-shadow: 0 0 8px black; text-align: center; }
+#main_menu > * { display: inline-block; padding: 0 16px; vertical-align: middle; margin: 10px auto; }
+#main_menu h1 { font-size: 1.5em; font-weight: bold; }
+#main_menu h2 { font-size: 1.2em; }
+#main_menu img { margin: -3px auto -7px; opacity: 1; }
+#main_menu a:hover h2, #main_menu a:hover h3 { color: red; }
+#main_menu .sub_menu { display: none; margin: 2px 0 5px; padding: 5px 0 0; border-top: 1px solid lightgray; }
+#main_menu .sub_menu * { padding: 0 5px; display: inline-block; }
+#main_menu .sub_menu b { font-weight: bold; margin: -4px 0 0; }
+
+/* Footer */
+#footer_bar { position: fixed; bottom: 0; width: 100%; text-align: center; padding: 3px 0 2px; background: white; box-shadow: 0 0 5px black; vertical-align: middle; }
+#footer_bar p { font-size: .9em; vertical-align: top; display: inline-block; }
+#footer_bar a { font-weight: bold; color: black; }
+#footer_bar a:hover { color: red; }
+
+/* Content */
+#content { width: 100%; margin: 52px auto 0; display: block; padding: 0; overflow-x: hidden; overflow-y: auto; }
+#content > .standard_width { width: 70%; margin: auto; display: block; padding: 0; }
+#content #peeps { width: 100%; margin: 20px 0; text-align: center; }
+#content #peeps td { width: 33%; padding: 20px 0; }
+#content #peeps td img { width: 200px; }
+
+/* Content (most pages) */
+#content > .standard_width h1 { margin: -1em auto 0; padding: 1em 0 0; text-align: center; width: 100%; display: block; }
+#content > .standard_width h2 { margin: 1.5em 0 .5em; padding: 1em 0 0; }
+#content > .standard_width h2.mm { margin: 1em 0 .5em; padding: 0; }
+#content > .standard_width h3 { margin: 1.25em 0 .5em; padding: 1em 0 0; }
+#content > .standard_width h4 { margin: 1em 0 .25em; text-decoration: underline; padding: 1em 0 0; }
+#content > .standard_width p { line-height: 1.5em; }
+#content > .standard_width li { line-height: 1.5em; }
+#content > .standard_width b { font-weight: bold; color: black; }
+#content > .standard_width img { max-width: 90%; margin: auto; text-align: center; display: block; }
+#content > .standard_width i { color: red; }
+#content > .standard_width a { font-weight: bold; }
+#content > .standard_width a * { font-weight: bold; }
+#content > .standard_width a:hover { color: red; }
+#content > .standard_width a:hover * { color: red; }
+#content > .standard_width .line_break { border-top: 1px solid black; width: 80%; text-align: center; margin: 50px auto; display: block; }
+#content > .standard_width .table_anbefalinger td { width: 25%; vertical-align: top; }
+#content > .standard_width .table_partnere td { width: 20%; text-align: center; }
+#content > .standard_width .top_knap { margin: auto; text-align: center; display: block; }
+#content > .standard_width .top_knap p { font-weight: bold; }
+#content > .standard_width #toc { display: none; }
+#content > .standard_width #toc td { vertical-align: top; }
+
+/* Content (books) */
+#content .book h1 { text-align: left; font-size: 1.25em; font-weight: bold; }
+#content .book table { width: 100%; margin: 0 0 20px; }
+#content .book td { vertical-align: top; }
+#content .book img { height: 250px; }
+#content .book .subtitle { margin: 0 0 20px; }
+#content .bigger { font-size: 2.25em; }
+#content .biggest { font-size: 2.5em; }
+
+#content #isbn_search .userinput { margin: .5em auto 0; width: 250px; display: block; padding: .5em 2em; border-bottom: 2px solid lightgray; text-align: center; font-size: 1em; }
+#content #isbn_search .userinput:hover { color: red; border-bottom: 2px solid red; }
+#content #isbn_search .submitknap { margin: .5em auto 0; display: block; padding: .25em 3em; background: white; font-size: 1em; border: 2px solid lightgray; }
+#content #isbn_search .submitknap:hover { color: red; border: 2px solid red; }
+#content #isbn_search #error { text-align: center; }
+#content #isbn_search #error::first-line { color: red; }
+
+/* Content (front page) */
+#content #front_page { margin: 0; }
+#content #front_page #front_page_banner { display: block; position: static; height: 480px; width: 100%; margin: -20px 0 0; }
+
+#content #front_page #front_page_banner #front_image_1 { z-index: 40; width: 100%; position: relative; height: 400px; padding: 50px 0 0; background: url('img_front_1.png') top no-repeat; background-size: cover; }
+#content #front_page #front_page_banner #front_image_2 { z-index: 39; width: 100%; position: relative; height: 400px; padding: 50px 0 0; background: url('img_front_2.png') top no-repeat; background-size: cover; margin: -450px 0 0; transform: translate(100%, 0); }
+#content #front_page #front_page_banner #front_image_3 { z-index: 38; width: 100%; position: relative; height: 400px; padding: 50px 0 0; background: url('img_front_3.png') top no-repeat; background-size: cover; margin: -450px 0 0; transform: translate(100%, 0); }
+#content #front_page #front_page_banner #front_image_1 h1 { font-size: 4em; width: 750px; text-align: center; margin: 0 auto; padding: 0 0 10px; color: white; background: rgba(0, 0, 0, .6); border-radius: 30px; transform: translate(0, 100px); }
+#content #front_page #front_page_banner #front_image_2 h1 { font-size: 4em; width: 750px; text-align: center; margin: 0 auto; padding: 0 0 10px; color: white; background: rgba(0, 0, 0, .6); border-radius: 30px; transform: translate(0, 150px); }
+#content #front_page #front_page_banner #front_image_2 h1 a { color: #77aaff; }
+#content #front_page #front_page_banner #front_image_2 h1 a:hover { color: #99ccff; }
+#content #front_page #front_page_banner #front_image_3 h1 { font-size: 4em; width: 750px; text-align: center; margin: 0 auto; padding: 0 0 10px; color: white; background: rgba(0, 0, 0, .6); border-radius: 30px; transform: translate(0, 60px); }
+
+#content #front_page #front_page_banner .arrows { position: absolute; margin: 0; display: inline-block; width: 70px; font-size: 8em; color: white; background: rgba(0, 0, 0, .4); padding: 0 .4em .25em; border-radius: 200px; }
+#content #front_page #front_page_banner .arrows:hover { background: rgba(0, 0, 0, .6); }
+#content #front_page #front_page_banner .arrows:nth-child(1) { left: 0; transform: translate(20px, 90px); }
+#content #front_page #front_page_banner .arrows:nth-child(2) { right: 0; transform: translate(-20px, 90px); }
+#content #front_page #front_page_banner p { bottom: 10px; font-size: 1.5em; margin: auto; width: 100%; text-align: center; position: absolute; }
+
+.moved_banner_center { transform: translate(0, 0) !important; transition: 1s; }
+.moved_banner_left { transform: translate(-100%, 0) !important; transition: 1s; }
+.moved_banner_right { transform: translate(100%, 0) !important; transition: 1s; }
+
+#content #front_page .front_page_info { width: 70%; margin: 0 auto 2em; display: block; box-shadow: inset 0 0 8px gray; padding: 1em 0; text-align: center; }
+#content #front_page .front_page_info h2 { margin: auto; text-align: center; display: block; }
+#content #front_page .front_page_info a { color: black; font-weight: bold; }
+#content #front_page .front_page_info a:hover { color: red; }
+
+#content #bogkataloger { margin: auto 0; text-align: center; display: block; }
+#content #bogkataloger a { display: inline-block; }
+#content #bogkataloger img { width: 200px; }
+
+.error_message { display: none; }
+
+#pp_container { overflow: hidden; width: 100% !important; height: calc(100% - 52px); margin: 0 !important; padding: 0 !important; z-index: 0; position: fixed; top: 52px; }
+#pp_content {overflow: hidden; width: 100%; height: 100%; }

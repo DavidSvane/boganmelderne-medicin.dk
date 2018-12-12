@@ -1,0 +1,24 @@
+﻿<div class="book">
+	<h1 class="title"></h1>
+	<p class="subtitle"></p>
+	<table>
+		<tr>
+			<td>
+				<p class="kursus"><b>Relevant kursus:</b> </p>
+				<p class="semester"><b>Semesterbrug:</b> </p>
+				<p class="forlag"><b>Forlag:</b> </p>
+				<p class="sprog"><b>Sprog:</b> </p>
+				<p class="sider"><b>Sider:</b> </p>
+				<p class="udgave"><b>Udgave:</b> </p>
+				<p class="udgivet"><b>Udgivet:</b> </p>
+				<p class="isbn"><b>ISBN:</b> </p>
+			</td>
+			<td><img class="cover" src="files/book/cover_.jpg"/></td>
+		</tr>
+	</table>
+	<p class="description"></p>
+	<br /><p class="description"></p>
+	
+	<br /><img class="rating" src="files/book/rate_.jpg"/>
+	
+</div>

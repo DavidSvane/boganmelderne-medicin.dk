@@ -1,0 +1,14 @@
+﻿<div class="standard_width">
+	<br /><h1 id="top"></h1>
+	<a href="javascript:toggleTOC()"><h2><b>&#8801;</b> Index</h2></a>
+	<ul id="toc">
+		<li><a href="#"><p></p></a></li>
+	</ul>
+	
+	<h2 id=""></h2>
+	<p></p>
+	
+	<br /><a href="#top" class="top_knap"><p>Tilbage til toppen</p></a>
+	
+	<br /><br /><br />
+</div>

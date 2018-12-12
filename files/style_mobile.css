@@ -1,0 +1,66 @@
+﻿/* Basics */
+@font-face { font-family: gidolinyaregular; src: url(gidolinyaregular.otf); }
+
+html, body { width: 100%; height: 100%; top: 0; background: white; overflow-x: hidden; }
+html, body, p, div, input, table, tr, td, img, b, span, form, a, h1, h2, h3, h4, h5, h6 { border: 0; margin: 0; padding: 0; font-family: gidolinyaregular; font-weight: lighter; color: #555; }
+a, textarea:focus, input:focus { outline: none; border: none; text-decoration: none; }
+::selection { color: lightgray; }
+
+/* Menu */
+#main_menu { font-size: 2em; display: block; background: white; padding: 1em 0; margin: 0; top: 0; width: 100%; overflow: hidden; box-shadow: 0 0 8px gray; text-align: center; }
+#main_menu #mobile_menu { display: none; }
+#main_menu h1 { font-size: 1.5em; font-weight: bold; }
+#main_menu h2 { font-size: 1.2em; margin: .25em 0; }
+#main_menu h3 { font-weight: lighter; }
+#main_menu img { margin: -3px auto -7px; opacity: 1; }
+#main_menu a:hover h2, #main_menu a:hover h3 { color: red; }
+#main_menu .sub_menu { display: none; margin: 2px 0 5px; padding: 5px 0; }
+#main_menu .sub_menu * { padding: 0 5px; display: inline-block; }
+#main_menu .sub_menu b { font-weight: bold; margin: -4px 0 0; }
+#main_menu #submenu1 h3 { font-weight: bold; }
+
+/* Footer */
+#footer_bar { width: 100%; text-align: center; padding: 3px 0 2px; background: white; box-shadow: 0 0 5px gray; vertical-align: middle; }
+#footer_bar p { margin: 0 1em; font-size: .9em; vertical-align: top; display: inline-block; }
+#footer_bar a { font-weight: bold; color: black; }
+#footer_bar a:hover { color: red; }
+
+/* Content */
+#content { width: 100%; padding: 0; margin: 0 auto; display: block; }
+/*#content > .standard_width { width: 70%; margin: auto; display: block; }*/
+
+/* Content (most pages) */
+#content > .standard_width h1 { margin: 0 auto; padding: 0 2em; text-align: center; display: block; font-weight: bold; }
+#content > .standard_width h2 { margin: 3.5em 0 .5em; padding: 0 2em; text-align: center; display: block; font-weight: bold; }
+#content > .standard_width h3 { margin: 3.25em 0 .5em; padding: 0 2em; text-align: center; display: block; font-weight: bold; }
+#content > .standard_width h4 { margin: 3em 0 .25em; text-decoration: underline; padding: 0 2em; text-align: center; display: block; font-weight: bold; }
+#content > .standard_width p { line-height: 1.5em; padding: 0 3em; }
+#content > .standard_width ul { margin: 0 1em; }
+#content > .standard_width li { line-height: 1.5em; }
+#content > .standard_width b { font-weight: bold; color: black; }
+#content > .standard_width img { width: 100%; }
+#content > .standard_width i { color: red; }
+#content > .standard_width a:hover * { color: red; }
+#content > .standard_width .line_break { border-top: 1px solid black; width: 80%; text-align: center; margin: 50px auto; display: block; }
+#content > .standard_width .table_anbefalinger, #content > .standard_width .table_anbefalinger tbody, #content > .standard_width .table_anbefalinger tr, #content > .standard_width .table_anbefalinger td { margin: 0 auto; text-align: center; display: block; }
+#content > .standard_width .table_partnere { margin: 0 auto; display: block; text-align: center; }
+#content > .standard_width .table_partnere td { width: 33%; vertical-align: top; padding: 1em; }
+#content > .standard_width .top_knap { margin: auto; text-align: center; display: block; }
+#content > .standard_width .top_knap p { font-weight: bold; }
+
+/* Content (front page) */
+/*#content #front_page { margin: 0; }
+#content #front_page #front_page_banner { width: 100%; margin: -40px 0 0; }*/
+
+#content #front_page #front_page_banner #front_image_1 { min-height: 400px; margin: 0 0 1em; background: url('front_image_1.png') center no-repeat; background-size: cover; }
+#content #front_page #front_page_banner #front_image_2 { min-height: 400px; margin: 0 0 1em; background: url('front_image_2.png') center no-repeat; background-size: cover; }
+#content #front_page #front_page_banner #front_image_3 { min-height: 400px; margin: 0 0 1em; background: url('front_image_3.png') center no-repeat; background-size: cover; }
+#content #front_page #front_page_banner #front_image_1 h1 { font-size: 4em; text-align: center; margin: 0 auto; padding: 0 0 10px; color: white; text-shadow: 0 0 .1em black; }
+#content #front_page #front_page_banner #front_image_2 h1 { font-size: 4em; text-align: center; margin: 0 auto; padding: 0 0 10px; color: white; text-shadow: 0 0 .1em black; }
+#content #front_page #front_page_banner #front_image_3 h1 { font-size: 4em; text-align: center; margin: 0 auto; padding: 0 0 10px; color: white; text-shadow: 0 0 .1em black; }
+
+#content #front_page #front_page_banner .arrows { display: none; }
+/*#content #front_page #front_page_banner .arrows:hover { background: rgba(0, 0, 0, .6); }
+#content #front_page #front_page_banner .arrows:nth-child(1) { left: 0; transform: translate(20px, 90px); }
+#content #front_page #front_page_banner .arrows:nth-child(2) { right: 0; transform: translate(-20px, 90px); }*/
+#content #front_page #front_page_banner p { display: none; }
